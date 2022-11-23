@@ -5,7 +5,26 @@ let machineResult;
 let pwdResult;
 
 // Add your code here
+if (machineActive){
+    machineResult = 'Machine On';
+    // if (pwd === 'cheese'){
+    //     pwdResult = 'Logged successfully';
+    // } else {
+    //     pwdResult = 'Login invalid';
+    // }
 
+
+    switch (true){
+        case (pwd === 'cheese'):
+            pwdResult = 'Logged successfully';
+        break;
+        default:
+            pwdResult = 'Login invalid';
+
+    }
+} else {
+    machineResult = 'Machine off';
+}
 // Don't edit the code below here!
 
 const section = document.querySelector('section');
