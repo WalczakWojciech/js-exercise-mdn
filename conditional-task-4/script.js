@@ -7,21 +7,24 @@ let pwdResult;
 // Add your code here
 if (machineActive){
     machineResult = 'Machine On';
+    // Option 1
     // if (pwd === 'cheese'){
     //     pwdResult = 'Logged successfully';
     // } else {
     //     pwdResult = 'Login invalid';
     // }
 
+    // Option 2
+    // switch (true){
+    //     case (pwd === 'cheese'):
+    //         pwdResult = 'Logged successfully';
+    //     break;
+    //     default:
+    //         pwdResult = 'Login invalid';
 
-    switch (true){
-        case (pwd === 'cheese'):
-            pwdResult = 'Logged successfully';
-        break;
-        default:
-            pwdResult = 'Login invalid';
-
-    }
+    // }
+    // Option 3
+    pwdResult = (pwd ==='cheese') ? 'Logged successfully': 'Login invalid';
 } else {
     machineResult = 'Machine off';
 }
